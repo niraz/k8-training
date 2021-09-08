@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podPython
+spec:
+  containers:
+  - name: k8-demo
+    image: arjunachari12/my-python-image
+    ports:
+    - name: nodejs-port
+      containerPort: 3000
